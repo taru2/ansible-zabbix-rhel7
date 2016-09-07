@@ -1,5 +1,5 @@
 
-# Installation fof Zabbix3.0 
+# Installation for Zabbix3.0 
 
 clone repository
 ```
