@@ -4,7 +4,7 @@
 dateTimezone: Asia/Tokyo
 
 # EPEL repository for Centos/RHEL version 7
-epelRepository: http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm
+epelRepository: http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
 
 #
 # ZABBIX repository specified to use in the installation
