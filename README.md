@@ -19,7 +19,10 @@ vim ./ansible-zabbix-rhel7/hosts
 execute
 ```
 cd ansible-zabbix-rhel7
-ansible-playbook -u root ./zabbix-server-mysql-standalone.yml
+ansible-playbook -u <userName> ./zabbix-server-mysql-standalone.yml
+
+# public key authentication
+ansible-playbook --private-key=<pathToPrivatekey> -u <userName> ./zabbix-server-mysql-standalone.yml
 ```
 
 mysql security setting
