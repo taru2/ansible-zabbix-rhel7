@@ -10,7 +10,9 @@
   when: "ansible_os_family == 'RedHat' and ansible_distribution_major_version == '7'"
 
 - name: Install ZABBIX Repo - Centos/RHEL 7
-  command: rpm -ivh /tmp/zabbix.rpm creates=/etc/yum.repos.d/zabbix.repo
+  yum:
+    name: /tmp/zabbix.rpm
+    state: present
   when: "ansible_os_family == 'RedHat' and ansible_distribution_major_version == '7'"
 
 - name: get {{ zabbixRpmGpgKey }}
