@@ -35,7 +35,7 @@
 
 # Setting database
 - name: Create a new database
-  mysql_db: name={{ DBName }} state=present
+  mysql_db: name={{ DBName }} state=present encoding=utf8 collation=utf8_bin
 
 - name: Create database user and 'WITH GRANT OPTION'
   mysql_user: name={{ DBUser }} password={{ DBPassword }} priv={{ DBName }}.*:ALL,GRANT state=present
