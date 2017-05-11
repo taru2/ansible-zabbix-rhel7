@@ -29,3 +29,10 @@ mysql security setting
 ```
 mysql_secure_installation
 ```
+
+First time login
+```
+http://<ipAddress or DNS>/zabbix/
+user: Admin
+pass: zabbix
+```
