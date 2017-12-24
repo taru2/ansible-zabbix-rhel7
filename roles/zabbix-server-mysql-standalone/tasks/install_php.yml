@@ -1,7 +1,18 @@
 ---
 # Install and setting php
 - name: Install php
-  yum: name=php state=latest enablerepo=remi,remi-php71
+  yum: name={{ item }} state=latest enablerepo=remi,remi-php71
+  with_items:
+  - php
+  - php-common
+  - php-gd
+  - php-mbstring
+  - php-xml
+  - php-ldap
+  - php-bcmath
+  - php-pdo
+  - php-mysql
+  - php-pecl-mysql
 
 - name: set php timezone
   lineinfile: >- 
