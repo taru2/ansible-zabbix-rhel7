@@ -1,0 +1,6 @@
+- name: Install fpint,iksemel
+  yum: name={{ item }} enablerepo=epel state=latest
+  with_items:
+    - fping
+    - iksemel
+    
