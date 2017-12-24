@@ -3,6 +3,7 @@
 - include: install_httpd.yml
 - include: install_php.yml
 - include: install_epel.yml
+- include: install_remi.yml
 - include: install_dependencies.yml
 
 # Download and install ZABBIX for Centos/RHEL version 7
